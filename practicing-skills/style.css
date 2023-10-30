@@ -1,0 +1,44 @@
+.request-now {
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 120px;
+ text-align: center;
+ border: none;
+ font-weight: bold; 
+}
+
+.request-now:hover {
+  cursor: pointer;
+}
+
+.add-cart {
+  font-style: bold;
+  width: 150px;
+  background-color: yellow;
+  height: 36px;
+  border-radius: 25px;
+  border-color: yellow;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.add-cart:hover {
+  cursor: pointer;
+}
+
+.get-started {
+  background-color: purple;
+  color: white;
+  height: 36px;
+  width: 120px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transform: rotate(.05turn);
+}
+
+.get-started:hover {
+cursor: pointer;
+
+}

@@ -1,0 +1,21 @@
+.flex-container {
+   display: flex;
+}
+
+
+.flex-container div {
+ background: black;
+ border: 10px solid brown;
+ height: 100px;
+ width: 200px;
+}
+
+.flex-container .one {
+  flex-shrink: 10;
+}
+
+
+
+
+
+
