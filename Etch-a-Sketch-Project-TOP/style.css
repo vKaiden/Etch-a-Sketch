@@ -1,12 +1,26 @@
 body {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .setGrid {
 text-align: center;
-
 font-size: large;
 margin-top: 15px;
 }
 
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  border: 1px solid black;
+}
+
+.allButtons {
+  margin-bottom: 5px;
+justify-content: space-between; 
+}
 
