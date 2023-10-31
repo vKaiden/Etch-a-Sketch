@@ -16,7 +16,7 @@ margin-top: 15px;
   width: 500px;
   height: 500px;
   display: grid;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .allButtons {
@@ -24,19 +24,26 @@ margin-top: 15px;
 }
 
 .popup {
+  font-size: large;
   margin-right: 50px;
   color: white;
   background-color: red;
 }
 
 .randomBtn {
+  font-size: large;
   margin-right: 50px;
   color: white;
   background-color: blue;
 }
 
 .resetBtn {
-  color: white;
-  background-color: black;
+  font-size: large;
+  color: black;
+}
+
+h2 {
+  color: black;
+
 }
 
