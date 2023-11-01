@@ -1,4 +1,18 @@
 let color = "black";
+let click = false;
+
+document.querySelector('body').addEventListener('click', function(e) {
+if(e.target.tagName != 'BUTTON') {
+  click = !click;
+  let draw = document.querySelector('.draw')
+  if(click) {
+    draw.innerHTML = "Now you can draw"
+  } else {
+   draw.innerHTML = "Drawing is paused"
+  }
+}
+})
+
 let setGridButton = document.querySelector('.popup')
 const container = document.querySelector('.container')
 let board = document.querySelector('.board')
@@ -40,12 +54,13 @@ setGridButton.addEventListener("click", function() {
 })
 
 function colorDiv() {
+  if(click) {
 if(color == "random") {
   this.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 } else {
   this.style.backgroundColor = "black";
 }
-}
+}}
 
 function setColor(colorChoice) {
 color = colorChoice;
