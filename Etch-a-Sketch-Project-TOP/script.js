@@ -1,14 +1,14 @@
 let color = "black";
-let click = false;
+let click = true;
 
 document.querySelector('body').addEventListener('click', function(e) {
 if(e.target.tagName != 'BUTTON') {
   click = !click;
   let draw = document.querySelector('.draw')
   if(click) {
-    draw.innerHTML = "Now you can draw"
+    draw.innerHTML = "Drawing is ON"
   } else {
-   draw.innerHTML = "Drawing is paused"
+   draw.innerHTML = "Drawing is PAUSED"
   }
 }
 })
@@ -41,7 +41,7 @@ function getSize() {
   if(input === "") {
     message.innerHTML = "You need to enter a number!"
   } else if(input < 0 || input > 100) {
-    message.innerHTML = "The number must be from 1 to 100"
+    message.innerHTML = "The number must be from 1 to 100!"
   } else {
     message.innerHTML = "Now you can play!"
     return input
