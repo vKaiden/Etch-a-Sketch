@@ -44,6 +44,12 @@ margin-top: 15px;
 
 h2 {
   color: black;
+}
 
+.blackBtn {
+  font-size: large;
+  margin-right: 50px;
+  color: white;
+  background-color: black;
 }
 

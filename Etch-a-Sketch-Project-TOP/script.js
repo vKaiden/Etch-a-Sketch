@@ -1,11 +1,9 @@
-
+let color = "black";
 let setGridButton = document.querySelector('.popup')
 const container = document.querySelector('.container')
 let board = document.querySelector('.board')
 const randomBtn = document.querySelector('.randomBtn');
 const resetBtn = document.querySelector('.resetBtn')
-
-
 
 function createBoard(size) {
   board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
@@ -15,8 +13,9 @@ let numDivs = size * size;
 
 for(let i = 0; i < numDivs; i++) {
  let div = document.createElement('div');
-  div.style.backgroundColor = "yellow"
-  board.insertAdjacentElement("beforeend", div)
+ div.addEventListener('mouseover', colorDiv)
+  
+ board.insertAdjacentElement("beforeend", div)
 }
 }
 
@@ -39,3 +38,20 @@ setGridButton.addEventListener("click", function() {
   let size = getSize();
   createBoard(size);
 })
+
+function colorDiv() {
+if(color == "random") {
+  this.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+} else {
+  this.style.backgroundColor = "black";
+}
+}
+
+function setColor(colorChoice) {
+color = colorChoice;
+}
+
+function resetBoard() {
+  let divs = document.querySelectorAll('div')
+  divs.forEach((div) => div.style.backgroundColor = 'white')
+}
